@@ -1,12 +1,14 @@
 <p align="center" markdown="1">
-    <img width="200" src="assets/logo.png" >
+    <img width="200" src="img/logo.png" >
 </p>
 <p align="center" style="font-size: 34px">
         <h1 align="center">FRUJICO</h1>
 </p>
 <p align="center" markdown="1">
-    <img width="800" src="assets/home.png" >
+    <img width="800" src="img/Readme-Image.png" >
 </p>
+
+[![Languages](https://skillicons.dev/icons?i=js,html,css)](https://skillicons.dev)
 
 About Us
 ========
@@ -46,21 +48,26 @@ ______
 
 - step 4: Then open the respective folder in VS Code.
 
-Our Google Drive Folder - [link](https://drive.google.com/drive/folders/1kkhYPTydAMbxyaJsegSgSA-8qR-q34P-).
+- step 5: Click `Go Live` in the bottom right corner to host a server to view the website.
+
+Our Google Drive Folder - [link](https://drive.google.com/drive/folders/1Nih_PqeWK_hcqIJ9ykpSHvg6Y7-Nav70).
 ______
 
 # Credits
 ## 🖼 Image courtesy
 
-- Images taken from [Google Images](https://www.google.com/search?q=fruit+drink&sca_esv=578489342&tbm=isch&sxsrf=AM9HkKlwCemIY-xzHW2nHoWsyudLhY3rIg:1698848515808&source=lnms&sa=X&ved=2ahUKEwjxjL_y_6KCAxWX4mEKHQebD8IQ_AUoAXoECAIQAw&biw=1745&bih=885&dpr=1.1).
+- Images taken from [Google Images](https://www.google.com/search?q=fruit+drink&sca_esv=578489342&tbm=isch&sxsrf=AM9HkKlwCemIY-xzHW2nHoWsyudLhY3rIg:1698848515808&source=lnms&sa=X&ved=2ahUKEwjxjL_y_6KCAxWX4mEKHQebD8IQ_AUoAXoECAIQAw&biw=1745&bih=885&dpr=1.1) and
+[Wallpaperset](https://wallpaperset.com).
 
 ## </> Code References
 
 - [W3School](https://www.w3schools.com/) for code enhancements.
 
-- [CSS Gradient](https://cssgradient.io/) for color codes.
+- [Devbeep](https://devbeep.com/), [Bootstrap](https://getbootstrap.com/), [geeksforgeeks](https://www.geeksforgeeks.org/), [Tutorialspoint](https://www.tutorialspoint.com/index.htm), [StackOverflow](https://stackoverflow.com/) and [Programiz](https://www.programiz.com/html) for HTML and JavaScript references.
 
-- [Programiz](https://www.programiz.com/html) for HTML references.
+## Web Framework
+
+- [Bootstrap](https://getbootstrap.com/).
 
 ______
 

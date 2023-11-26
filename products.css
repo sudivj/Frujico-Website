@@ -1,0 +1,317 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+  margin-top: 0;
+  background-color: #e6e5e5;
+}
+.slide1 {
+  width: 100%;
+  height: 25%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.507)),url("img/exotic_slide.jpg");
+  background-repeat: no-repeat;
+  font-size: 18px;
+}
+.slide2 {
+  width: 100%;
+  height: 25%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.507)),url("img/classics_slide.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-size: 18px;
+}
+.slide3 {
+  width: 100%;
+  height: 25%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.507)),url("img/delight_slide.jpg");
+  background-repeat: no-repeat;
+  font-size: 18px;
+}
+.text-light.fw-bold.display-3 {
+  margin-top: 120px;
+  padding-left: 30px;
+}
+.slide-text {
+  padding-left: 30px;
+  color: white;
+}
+.btn.btn-lg {
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  color: white;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #00ff37;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.btn.btn-lg .btn_span {
+  background: rgb(31, 189, 31);
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 1s;
+}
+.btn.btn-lg:hover .btn_span {
+  width: 100%;
+}
+.btn.btn-lg:hover {
+  border: none;
+}
+@keyframes loadanimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+.products {
+	padding: 5% 0 0;
+}
+.card {
+    border: none;
+	box-shadow: 5px 5px 20px rgba(24, 24, 24, 0.5);
+}
+icon-shape {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.icon-sm {
+  width: 2rem;
+  height: 2rem;
+  
+}
+.card-body {
+	color: #344b5e;
+	background: #f4f5f5;
+}
+.card-img-top{
+  height: 250px;
+}
+.card-title {
+	font-size: 25px;
+	font-weight: 700;
+}
+.btn-sm {
+	background: linear-gradient(25deg, #209a95, #00cea5);
+	color: #fff;
+	font-size: 15px;
+	margin-right: 5px;
+	font-weight: 700;
+    transition: all .6s ease-in;
+}
+.price {
+	font-size: 20px; 
+	font-weight: 900;    
+  transition: .6s;
+}
+.card:hover .price{
+    animation: pulse .5s ease-in-out infinite;
+}
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(.95);
+    }
+    0%{
+        transform: scale(1);
+    }
+}
+.btn-sm:hover {
+	background:rgb(25, 143, 94);
+	color: #262626;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.footer-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer-logo-image {
+  transition: filter 500ms;
+}
+.footer-logo-image:hover {
+  filter: drop-shadow(0px 0px 24px #f88807);
+}
+.footer-company-name-01 {
+  font-family: product sans, sans-serif;
+  font-size: 32px;
+  color: #e7e4e4;
+  margin: 0 0 -10px 0;
+}
+.footer-company-name-02 {
+  font-family: product sans, sans-serif;
+  font-size: 26px;
+  color: #bbbaba;
+}
+.footer-contact-title {
+  font-size: 22px;
+  font-weight: 400;
+  color: #f88807;
+}
+.footer-navbar-title {
+  font-size: 22px;
+  font-weight: 400;
+  color: #f88807;
+}
+.footer-contact-group {
+  font-size: 16px;
+}
+.footer-navbar-link {
+  color: white;
+  transition: color 300ms;
+  cursor: pointer;
+}
+.footer-navbar-link:hover {
+  color: #727272;
+}
+.footer-slogan {
+  color: #858484;
+}
+.footer-socials-link {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #5a5a5a;
+  border-radius: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 400ms;
+}
+.footer-socials-link:hover {
+  background: #e7e4e4;
+  cursor: pointer;
+}
+.footer-socials-link:hover > i {
+  color: #343b41;
+  cursor: pointer;
+}
+.footer-socials-link i {
+  font-size: 16px;
+  color: #999999;
+  transition: color 300ms;
+}
+.footer-group-items {
+  font-size: 13px;
+  color: #7c7c7c;
+  text-decoration: underline #7c7c7c solid 1px;
+  text-underline-offset: 2px;
+  transition: color 400ms;
+}
+.footer-group-items:hover {
+  color: #a15d10;
+  text-decoration: underline #a15d10 solid 1px;
+  text-underline-offset: 2px;
+  cursor: pointer;
+}
+.footer-copyright {
+  margin-top: -10px;
+  font-size: 14px;
+  color: #7c7c7c;
+}
+@media screen and (max-height:439px){
+  .text-light.fw-bold.display-3 {
+    margin-top: 30px;
+    font-size: 30px;
+    padding-left: 30px;
+  }
+  .slide-text {
+    font-size: 15px;
+    padding-left: 30px;
+    color: white;
+  }
+  .btn.btn-lg {
+    width: 120px;
+    padding: 15px 0;
+    text-align: center;
+    color: white;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #00ff37;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  .btn.btn-lg .btn_span {
+    background: rgb(31, 189, 31);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 1s;
+  }
+  .btn.btn-lg:hover .btn_span {
+    width: 100%;
+  }
+  .btn.btn-lg:hover {
+    border: none;
+  }
+}
+@media screen and (max-width: 720px) {
+  .footer-about-logo {
+      display: flex;
+      justify-content: center;
+  }
+  .footer-slogan {
+      text-align: center;
+  }
+  .footer-socials-media-q {
+      display: flex;
+      justify-content: center;
+  }
+  .footer-group {
+      text-align: center;
+  }
+  .footer-navbar-title {
+      text-align: center;
+  }
+  .footer-navbar-link {
+      display: flex;
+      justify-content: center;
+  }
+  .footer-contact-title {
+      text-align: center;
+  }
+  .footer-contact-item {
+      text-align: center;
+  }
+}

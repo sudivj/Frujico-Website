@@ -1,0 +1,281 @@
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background-color: #e6e5e5;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.btn.btn-lg {
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #f88807;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.btn.btn-lg  .btn_span {
+  background: #f88807;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 1s;
+}
+.btn.btn-lg:hover .btn_span {
+  width: 100%;
+}
+.btn.btn-lg:hover {
+  border: none;
+}
+@keyframes loadanimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+.about-us-img {
+  transition: all .3s ease-in;
+}
+
+.about-us-img:hover {
+  transform: scale(1.01);
+}
+
+.text-underline {
+  display: inline-block;
+  position: relative;
+  color: #5cb85c;
+}
+.container{
+    margin-top: 100px;
+}
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+  .form-area {
+    margin-top: -100px;
+  }
+.row.single-form {
+    box-shadow: 0 2px 20px -5px rgba(0,0,0,0.5);
+  }
+  .single-form{
+      background-color: rgba(246, 246, 246, 0.8);
+  }
+  .right {
+    padding: 70px 100px;
+    position: relative;
+  }
+  .right i {
+    position: absolute;
+    font-size: 80px;
+    left: -27px;
+    top: 40%;
+    color: #fff;
+  }
+  .form-control {
+    border: 2px solid #000;
+  }
+  .right button {
+    border: none;
+    border-radius: 0;
+    background: #f88807;
+    width: 180px;
+    color: #fff;
+    padding: 15px 0;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  .right button:hover{
+      background-color: #db8018;
+  }
+  
+  @media (min-width:768px) and (max-width:991px){
+      .right i {
+    top: -52px;
+    transform: rotate(90deg);
+    left: 50%;
+  }
+  }
+  
+  @media (max-width:767px){
+      .left {
+    padding: 90px 15px;
+    text-align: center;
+  }
+  .left h2 {
+    font-size: 25px;
+  }
+  .right {
+    padding: 25px;
+  }
+  .right i {
+    top: -52px;
+    transform: rotate(90deg);
+    left: 46%;
+  }
+      .right button {
+    width: 150px;
+    padding: 12px 0;
+  }
+      
+  }
+  
+  .footer-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer-logo-image {
+    transition: filter 500ms;
+}
+.footer-logo-image:hover {
+    filter: drop-shadow(0px 0px 24px #f88807);
+}
+.footer-company-name-01 {
+    font-family: product sans, sans-serif;
+    font-size: 32px;
+    color: #e7e4e4;
+    margin: 0 0 -10px 0;
+}
+.footer-company-name-02 {
+    font-family: product sans, sans-serif;
+    font-size: 26px;
+    color: #bbbaba;
+}
+.footer-contact-title {
+    font-size: 22px;
+    font-weight: 400;
+    color: #f88807;
+}
+.footer-navbar-title {
+    font-size: 22px;
+    font-weight: 400;
+    color: #f88807;
+}
+.footer-contact-group {
+    font-size: 16px;
+}
+.footer-navbar-link {
+    color: white;
+    transition: color 300ms;
+    cursor: pointer;
+}
+.footer-navbar-link:hover {
+    color: #727272;
+}
+.footer-slogan {
+    color: #858484;
+}
+.footer-socials-link {
+    width: 42px;
+    height: 42px;
+    border: 1px solid #5a5a5a;
+    border-radius: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 400ms;
+}
+.footer-socials-link:hover {
+    background: #e7e4e4;
+    cursor: pointer;
+}
+.footer-socials-link:hover > i {
+    color: #343b41;
+    cursor: pointer;
+}
+.footer-socials-link i {
+    font-size: 16px;
+    color: #999999;
+    transition: color 300ms;
+}
+.footer-group-items {
+    font-size: 13px;
+    color: #7c7c7c;
+    text-decoration: underline #7c7c7c solid 1px;
+    text-underline-offset: 2px;
+    transition: color 400ms;
+}
+.footer-group-items:hover {
+    color: #a15d10;
+    text-decoration: underline #a15d10 solid 1px;
+    text-underline-offset: 2px;
+    cursor: pointer;
+}
+.footer-copyright {
+    margin-top: -10px;
+    font-size: 14px;
+    color: #7c7c7c;
+}
+
+@media screen and (max-width: 720px) {
+    .footer-about-logo {
+        display: flex;
+        justify-content: center;
+    }
+    .footer-slogan {
+        text-align: center;
+    }
+    .footer-socials-media-q {
+        display: flex;
+        justify-content: center;
+    }
+    .footer-group {
+        text-align: center;
+    }
+    .footer-navbar-title {
+        text-align: center;
+    }
+    .footer-navbar-link {
+        display: flex;
+        justify-content: center;
+    }
+    .footer-contact-title {
+        text-align: center;
+    }
+    .footer-contact-item {
+        text-align: center;
+    }
+  }
+  .bicon{
+    font-size: 20px;
+}
+.dflexcon{
+    font-size: 18px;
+    padding-left: 18px;
+    font-family:sans-serif;
+}

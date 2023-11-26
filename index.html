@@ -1,249 +1,324 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Fruijico</title>
-        <link rel="icon" href="assets/logo.png">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
-        <link rel="stylesheet" href="Style.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <!--Navigation Bar-->
-        <header class="header">
-            <a href="#" class="logo"><img src="assets/logo.png" style="width:50px;height:50px";></a>
-            <nav class="navbar">
-                <a href="#">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="#about">About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="#d2">Products</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="#container">Contact</a>
-                <form class="searchbar">
-                    <input type="search" id="search" name="search" placeholder=" Search Here" class="searchtext">
-                    <input type="image" src="assets/search.png"  alt="Submit" class="searchbutton">
-                </form>
-        </nav>
-        </header>
-        <!--Welcome-->
-        <div id="wcontainer">
-            <h1 style="text-align: center;" class="wh1">WELCOME TO</h1>
-            <h1 style="text-align: center; font-size: 60px; color: orange; text-shadow: 5px 5px rgb(50, 145, 145); " class="wh1">FRUJICO</h1>
-        </div>
-        <!--About Us-->
-        <div class="about-us">
-            <div id="about">
-                <div id="content">
-                    <h2 id="content-head"><u>About Us</u></h2>
-                    <br>
-                    <p>
-                        <strong>FRUJICO</strong> is passionate about creating fruit drinks that go beyond sustenance.
-                        We prioritize using fresh ingredients and innovative recipes to offer delicious and meaningful products.
-                        Sustainability and ethical sourcing are key principles, and We donate a portion of profits to support
-                        food
-                        insecurity and sustainability initiatives.
-                    </p>
-                    <br><br>
-                    <p>
-                        At <strong>FRUJICO</strong>, we are more than just a fruit drink company.
-                        We are a community of people who believe that fruit drinks have the power to bring people together and
-                        make
-                        the world a better place.
-                        We in the power of fruit drinks to unite people and improve the world, inviting you to be a part of
-                        their
-                        culinary journey.
-                    </p>
-                </div>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                <img src="assets/aqua-fresca-22.jpg" id="content-img">
-            </div>
-        </div>
-        <!--Products-->
-        <div id="d2">
-            <h1 class="h1">Products</h1>
-            <div class="vercontainer">
-                <div class="accordion_tab">
-                    <div class="accordion_tab_wrapper">
-                        <input type="radio" id="one" name="accordion_group" class="radio" checked>
-                        <input type="radio" id="two" name="accordion_group" class="radio">
-                        <input type="radio" id="three" name="accordion_group" class="radio">
-                        <input type="radio" id="four" name="accordion_group" class="radio">
-                        <div class="accordion_tab_group">
-                            <label for="one" class="tab" id="one-tab">Exotics</label>
-                            <label for="two" class="tab" id="two-tab">Classics</label>
-                            <label for="three" class="tab" id="three-tab">Delights</label>
-                        </div>
-                        <div class="accordion_tab_contents">
-                            <div class="accordion_tab_content" id="one-tab-content">
-                              <div class="card card1">
-                                <div class="productcontainer">
-                                    <img src="img/local.jpg" alt="Local" class="pimg">
-                                </div>
-                                <div class="details">
-                                    <h3 class="ph3">Exotic Products</h3>
-                                    <p class="pp">We have exotic products.Made using all the quality nutritional food items.Try now.Feel the taste.</p>
-                                </div>
-                            </div>
-                            </div>
-                            <div class="accordion_tab_content" id="two-tab-content">
-                              <div class="card card2">
-                                <div class="productcontainer">
-                                    <img src="img/common.jpg" alt="Classics" class="pimg">
-                                </div>
-                                <div class="details">
-                                    <h3 class="ph3">Classics</h3>
-                                    <p class="pp">You can purchase classical products such as Mango, Orange and Apple etc. Fresh and Healthy fruit items are used and try taste.</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="accordion_tab_content" id="three-tab-content">
-                              <div class="card card3">
-                                <div class="productcontainer">
-                                    <img src="img/exotic.jpg" alt="Exotics" class="pimg">
-                                </div>
-                                <div class="details">
-                                    <h3 class="ph3">Delights</h3>
-                                    <p class="pp">You all can purchase rare type of flavours.Different types of recepies.New flavours.Try all these out</p>  
-                                </div>
-                                </div>
-                            
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="btna"><a href="products.html" class="btnl">Start Shopping</a></button>
-        </div>
-        <!--Contact Us-->
-        <div id="container">
-            <h1>Connect With Us</h1>
-            <br>
-            <p style="font-size: 20px;">We Would love to respond to your queries and help you succeed.<br> 
-                Feel free to get in touch with us
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frujico</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="icon" href="img/logo.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark border-bottom border-body mb-5 position-static"
+    data-bs-theme="dark" style="animation: loadanimation 1s;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo.png" alt="Bootstrap" width="40" height="40" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-us">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-dark" style="background-color: #f88807;">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid" style="margin-top: 170px">
+    <h1 class=" fw-bold text-center display-1" style="animation: loadanimation 4s">
+      Welcome To Frujico
+    </h1>
+    <br /><br />
+    <p class="text-center" style="font-size: 20px">
+      Welcome to a world where every sip is a burst of pure joy. <br />
+      Refresh, revitalize, and savor the goodness with us!
+    </p>
+    <center>
+      <a href="#container1" class="btn btn-lg"><span class="btn_span"></span>Products</a>
+      <a href="#contact" class="btn btn-lg"><span class="btn_span"></span>Contact</a>
+    </center>
+  </div>
+  <br><br>
+  <!-- Product Section -->
+  <div class="container" id="container1">
+    <h1 class="text-dark text-center display-4">Our Products</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+      <div class="col" style="filter: drop-shadow(5px 5px 20px rgba(52, 75, 94, 0.37)  );">
+        <div class="card h-100">
+          <img src="img/exotic.jpg" class="card-img-top" />
+          <div class="card-body">
+            <h5 class="card-title">Exotics</h5>
+            <p class="card-text">
+              Sip the extraordinary: Indulge in the vibrant allure of exotic
+              fruits with our exquisite juice collection
             </p>
-            <br><br>
-            <div class="contact-box">
-                <div class="contact-left">
-                    <h3>Send your request</h3>
-                    <form>
-                        <div class="i-r">
-                            <div class="i-g">
-                                
-                                <label>Name</label>
-                                <input type="text" placeholder="Your Name" required>
-    
-                            </div>
-                            <div class="i-g">
-                                <label>Phone</label>
-                                <input type="tel" placeholder="+123456789" required>
-    
-                            </div>
-                        </div>
-                        <div class="i-r">
-                            <div class="i-g">
-                                <label>Email</label>
-                                <input type="email" placeholder="Example@gmail.com" required>
-    
-                            </div>
-                            <div class="i-g">
-                                <label>Subject</label> 
-                                <input type="tel" placeholder="product demo" required>
-    
-                            </div>
-                        </div>
-                        <label class="msglabel">Request</label>
-                        <textarea rows="5" placeholder="Your request"></textarea>
-                        <button type="submit" class="bts" onclick="alert('Your request has been sent.')">send</button>
-                    </form>
-                </div>
-                <div class="contact-right">
-                    <h3>Reach us</h3>
-                    <table>
-                        <tr>
-                            <td>Email</td>
-                            <td>frujico@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <td>Phone</td>
-                            <td>+94 77 333 0911</td>
-                        </tr>
-                        <tr>
-                            <td>Address</td>
-                            <td>Colombo 7, Royal College </td>
-                        </tr>
-                    </table>
-    
-                </div>
+          </div>
+        </div>
+      </div>
+      <div class="col" style="filter: drop-shadow(5px 5px 20px rgba(52, 75, 94, 0.37)  );">
+        <div class="card h-100">
+          <img src="img/common.jpg" class="card-img-top" />
+          <div class="card-body">
+            <h5 class="card-title">Classics</h5>
+            <p class="card-text">
+              Indulge in timeless flavors with Classics Fruit Juice – Nature's
+              goodness bottled for your refreshing delight
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col" style="filter: drop-shadow(5px 5px 20px rgba(52, 75, 94, 0.37)  );">
+        <div class="card h-100">
+          <img src="img/delight.jpg" class="card-img-top" />
+          <div class="card-body">
+            <h5 class="card-title">Delights</h5>
+            <p class="card-text">
+              Sip the joy of nature with our exquisite fruit juices, delivering delight to your doorstep instantly!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/slide1.jpg">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slide2.webp">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slide3.png">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slide4.jpg">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <center>
+      <a href="products.html" class="btn btn-lg"><span class="btn_span"></span>Shop Now</a>
+    </center>
+  </div>
+  <!-- About Us -->
+  <div class="container-fluid mt-5" id="about-us">
+    <div class="row justify-content-center" style="min-height: 600px;">
+      <div class="col-12 col-md-12 col-lg-4 my-auto">
+        <div class="text-wrap">
+          <h1 style="font-size: 400%;">About Us</h1>
+          <div style="font-size: 125%;">
+            <p>
+              <strong class="text-success text-underline">FRUJICO</strong> is passionate about creating fruit drinks
+              that go beyond sustenance.
+              We prioritize using fresh ingredients and innovative recipes to offer delicious and meaningful products.
+              Sustainability and ethical sourcing are key principles, and We donate a portion of profits to support
+              food
+              insecurity and sustainability initiatives.
+            </p>
+            <p>
+              At <strong class="text-success text-underline">FRUJICO</strong>, we are more than just a fruit drink
+              company.
+              We are a community of people who believe that fruit drinks have the power to bring people together and
+              make
+              the world a better place.
+              We in the power of fruit drinks to unite people and improve the world, inviting you to be a part of our
+              culinary journey.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-12 col-lg-6 rounded-5 my-auto" style="width:600px;">
+        <img class="w-100 p-2 rounded-5  about-us-img" src="img/front-img.jpg" alt="About-Us-img"
+          style="filter: drop-shadow(5px 5px 20px rgba(52, 75, 94, 0.37)  );">
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Contact Us -->
+  <div class="container-fluid mt-5" id="contact">
+    <h1 class="text-dark text-center fw-bold">Get In Touch</h1>
+    <br><br>
+    <div class="form-area">
+      <div class="container">
+        <div class="row single-form g-0">
+          <div class="col-sm-12 col-lg-6 " style="background-color: #252525;">
+            <h3 class="text-center fw-bold mt-3" style="color: #ecf0f1;">Contact Us</h3>
+            <div class="mt-5" style="color: #ecf0f1;">
+              <div class="d-flex dflexcon">
+                <i class="bi bi-geo-alt-fill bicon" style="margin: 10px;"></i>
+                <p> Address: BauddhaLoka Mawatha, <br>Colombo 07</p>
+              </div>
+              <hr>
+              <div class="d-flex dflexcon">
+                <i class="bi bi-telephone-fill" style="margin: 10px;"></i>
+                <p>Mobile: 0706552478/ <br>0332232006</p>
+              </div>
+              <hr>
+              <div class="d-flex dflexcon">
+                <i class="bi bi-envelope-at-fill" style="margin: 10px;"></i>
+                <p> Email Address: frujico@gmail.com/ <br>frujicoproducts@gmail.com</p>
+              </div>
             </div>
-    
-            </div>
-            <!--Footer-->
-            <footer>
-                <div class="footer-top">
-                    <div class="footer-container">
-                        <div class="footer-row">
-                            <div class="footer-about fadeInUp">
-                                <div class="footer-logo-name">
-                                    <div class="footer-logo-image">
-                                        <img class="logo-footer" src="assets/logo.png" alt="logo-footer" data-at2x="assets/img/logo.png" />
-                                    </div>
-                                    <div class="footer-company-name">
-                                        <h2 class="footer-company-name-01">Frujico</h2>
-                                        <h2 class="footer-company-name-02">Drinks</h2>
-                                    </div>
-                                </div>
-                                <p class="footer-slogan">
-                                    A Symphony of Flavors in Every Glass
-                                </p>
-                                <div class="col-md-4 col-lg-3 footer-social wow fadeInUp">
-                                    <p>
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a> 
-                                        <a href="#"><i class="fab fa-twitter"></i></a> 
-                                        <a href="#"><i class="fab fa-google-plus-g"></i></a> 
-                                        <a href="#"><i class="fab fa-instagram"></i></a> 
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="footer-contact">
-                                <h3>Contact Us</h3>
-                                <div class="footer-contact-links">
-                                    <p><i class="fas fa-map-marker-alt"></i> Royal College, Colombo 07</p>
-                                    <p><i class="fas fa-phone"></i>+94 77 333 0911</p>
-                                    <p><i class="fas fa-envelope"></i> <a href="mailto:hello@domain.com">frujico@gmail.com</a></p>
-                                    <P><i class="fas fa-at"></i>#frujico_drinks</P>
-                                </div>
-                            </div>
-                            <div class="footer-navbar-collapse" id="navbarNav">
-                                <h3>Quick Links</h3>
-                                <ul class="footer-navbar-nav">
-                                    <li class="footer-nav-item">
-                                        <a class="footer-nav-link scroll-link" href="#wcontainer">Home</a>
-                                    </li>
-                                    <li class="footer-nav-item">
-                                        <a class="footer-nav-link scroll-link" href="#about">About Us</a>
-                                    </li>
-                                    <li class="footer-nav-item">
-                                        <a class="footer-nav-link scroll-link" href="products.html">Our Products</a>
-                                    </li>
-                                    <li class="footer-nav-item">
-                                        <a class="footer-nav-link scroll-link" href="#container">Contact</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="footer-copyright">
-                            <div class="footer-copyright-links">
-                                <a href="" class="footer-copyright-link-01">Privacy Policy</a>
-                                <p class="footer-blankspace">&#160; &#160; &#160;</p>
-                                <a href="" class="footer-copyright-link-02">Terms & Conditions</a>
-                                <p class="footer-blankspace">&#160; &#160; &#160;</p>
-                                <a href="" class="footer-copyright-link-03">News</a>
-                                <p class="footer-blankspace">&#160; &#160; &#160;</p>
-                                <a href="" class="footer-copyright-link-04">Help</a>
-                            </div>
-                            <p class="footer-copyright-text">Copyright &copy; 2023 By <b>Codials&trade;</b> All Rights Reseved.</p>
-                        </div>
-                    </div>
+          </div>
+          <div class="col-sm-12 col-lg-6">
+            <div class="right">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Your Name</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 </div>
-            </footer>
-            <script src="script.js"></script>
-    </body>
-    </html>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Message</label>
+                  <textarea type="password" class="form-control" id="exampleInputPassword1"></textarea>
+                </div>
+                <button onClick="sendMessage()" type="submit" class="btn btn-primary">Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <!-- Footer -->
+  <footer>
+    <div class="container-fluid bg-dark">
+      <div class="row py-5 mx-4 d-flex justify-content-around">
+        <!--Footer Logo & Socials-->
+        <div class="col-sm-12 col-md-5 px-4 px-md-0 footer-about">
+          <div class="mx-md-1 mb-4">
+            <!--Footer Logo Name & Image-->
+            <div class="footer-about-logo">
+              <div class="mx-md-1 d-inline-flex justify-content-start">
+                <img class="img footer-logo-image" src="img/logo.png" alt="frujico-logo-footer"
+                  data-at2x="assets/img/logo.png" width="72px" height="72px" />
+                <div class="text-start mx-2">
+                  <div class="footer-company-name-01">Frujico</div>
+                  <div class="footer-company-name-02">Drinks</div>
+                </div>
+              </div>
+            </div>
+            <div class="mx-1 my-2 text-md-left footer-slogan">
+              <p><i>A Symphony of Flavors in Every Glass</i></p>
+            </div>
+            <!--Footer Socials-->
+            <div class="footer-socials-media-q">
+              <div class="d-inline-flex my-1 footer-socials">
+                <div class="p-3 mx-2 footer-socials-link">
+                  <i class="bi bi-facebook"></i>
+                </div>
+                <div class="p-3 mx-2 footer-socials-link">
+                  <i class="bi bi-twitter-x"></i>
+                </div>
+                <div class="p-3 mx-2 footer-socials-link">
+                  <i class="bi bi-youtube"></i>
+                </div>
+                <div class="p-3 mx-2 footer-socials-link">
+                  <i class="bi bi-instagram"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Footer Contacts-->
+        <div class="col-sm-12 col-md-4 my-2 my-md-0 px-4 px-md-0">
+          <div class="mb-4">
+            <div class="text-md-left footer-contact-title">Contact Us</div>
+            <div class="text-white mt-3 footer-contact-group">
+              <div class="text-md-left my-2 footer-contact-item">
+                <i class="bi bi-geo-alt-fill"></i>
+                <span class="m-2">Royal College, Colombo 07</span>
+              </div>
+              <div class="text-md-left my-2 footer-contact-item">
+                <i class="bi bi-telephone-fill"></i>
+                <span class="m-2">+94 77 333 0911</span>
+              </div>
+              <div class=" text-md-left my-2 footer-contact-item">
+                <i class="bi bi-envelope-fill"></i>
+                <span class="m-2">frujico@gmail.com</span>
+              </div>
+              <div class="text-md-left my-2 footer-contact-item">
+                <i class="bi bi-at"></i>
+                <span class="m-2">#frujico_drinks</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Footer Navbar-->
+        <div class="col-sm-12 col-md-3 float-md-start px-4 px-md-0">
+          <div class="mb-5">
+            <div class="text-md-left footer-navbar-title">Quick Links</div>
+            <div class="text-white mt-3 footer-navbar-links-group">
+              <div class="text-md-left my-2">
+                <a class="text-decoration-none footer-navbar-link" href="index.html">Home</a>
+              </div>
+              <div class="text-md-left my-2">
+                <a class="text-decoration-none footer-navbar-link" href="#about-us">About Frujico</a>
+              </div>
+              <div class="text-md-left my-2">
+                <a class="text-decoration-none footer-navbar-link" href="#container1">Our Products</a>
+              </div>
+              <div class="text-md-left my-2">
+                <a class="text-decoration-none footer-navbar-link" href="#contact">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Footer Copyright & Info-->
+        <div class="">
+          <div class="d-flex justify-content-center">
+            <ul class="list-inline footer-group">
+              <li class="px-1 list-inline-item footer-group-items">Privacy Policy</li>
+              <li class="px-1 list-inline-item footer-group-items">Terms & Conditions</li>
+              <li class="px-1 list-inline-item footer-group-items">News</li>
+              <li class="px-1 list-inline-item footer-group-items">Help</li>
+            </ul>
+          </div>
+          <div class="text-center footer-copyright">
+            <p>Copyright © 2023 By <strong>Codials™</strong> All Rights Reseved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
