@@ -22,7 +22,7 @@ At **Frujico**, we are more than just a fruit drink company.
 We are a community of people who believe that fruit drinks have the 
 power to bring people together and make the world a better place.
 We in the power of fruit drinks to unite people and improve the world, 
-inviting you to be a part of their culinary journey.
+inviting you to be a part of our culinary journey.
 ______
 
 # What is this ?
