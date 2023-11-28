@@ -5,7 +5,7 @@
         <h1 align="center">FRUJICO</h1>
 </p>
 <p align="center" markdown="1">
-    <img width="800" src="img/Readme-Image.png" >
+    <img width="800" src="img/Readme-Image.png" style="border-radius: 5px">
 </p>
 
 [![Languages](https://skillicons.dev/icons?i=js,html,css)](https://skillicons.dev)
