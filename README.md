@@ -8,6 +8,8 @@
     <img width="800" src="img/Readme-Image.png" style="border-radius: 5px">
 </p>
 
+## Language support
+
 [![Languages](https://skillicons.dev/icons?i=js,html,css)](https://skillicons.dev)
 
 About Us
